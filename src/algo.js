@@ -40,9 +40,9 @@ function isValidMove(move) {
 
 function getKnightMoves(position) {
 
-    let array = new Array();
+  let array = new Array();
 
-    moves = [
+  let moves = [
     [-2, 1],
     [-1, 2],
     [1, 2],
@@ -63,4 +63,4 @@ function getKnightMoves(position) {
   return array;
 }
 
-console.log(knightPath([0,0], [7,7]))
+export {knightPath}

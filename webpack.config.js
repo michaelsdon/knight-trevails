@@ -7,8 +7,9 @@ module.exports = {
     static: './dist',
   },
   entry: {
-    index: './src/index.js',
     algo: './src/algo.js',
+    dom: './src/dom.js',
+    index: './src/index.js',
   },
   mode: 'development',
   module: {
