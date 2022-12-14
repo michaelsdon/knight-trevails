@@ -1,0 +1,94 @@
+:root {
+  --cell-size: calc(100vh/10);
+  --soft-gray: rgb(230, 230, 230);
+  --soft-green: rgb(193,226,190);
+  --soft-red: rgb(244, 113, 116);
+  --soft-blue: #93caed;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40vh;
+}
+
+button {
+  background-color: white;
+  border: 2px solid var(--soft-gray);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  border-color:  black;
+}
+
+button:active {
+  transform: scale(1.15);
+}
+
+.legend {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+
+#start,
+#final {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: var(--soft-green);
+  margin-right: 20px;
+}
+
+#final {
+  background-color: var(--soft-red);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--soft-gray);
+  width: 70vw;
+}
+
+#board {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.cell {
+  height:var(--cell-size) ;
+  width: var(--cell-size);
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+.cell:hover {
+  background-color: var(--soft-green);
+}
+
+.cell:active {
+  transform: scale(1.15);
+}
